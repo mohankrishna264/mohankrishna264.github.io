@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#edf2ff"/>
+  <path d="M18 18h28v8H28v20H18z" fill="#3178C6"/>
+  <path d="M37 18h9v8h-9z" fill="#66A8FF"/>
+  <text x="32" y="54" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#1f2937">TypeScript</text>
+</svg>

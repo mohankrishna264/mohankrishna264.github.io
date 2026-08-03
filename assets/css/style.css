@@ -12875,11 +12875,11 @@ figcaption {
 }
 .slide .skill-share-inner .skill-share li {
   margin: 10px 12px;
-  line-height: 55px;
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
   text-align: center;
   font-size: 14px;
   letter-spacing: 2px;
@@ -12889,8 +12889,38 @@ figcaption {
   box-shadow: var(--shadow-1);
 }
 .slide .skill-share-inner .skill-share li img {
-  max-height: 23px;
+  display: block;
+  max-height: 40px;
+  max-width: 40px;
   width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.slide .skill-share-inner .skill-share li {
+  position: relative;
+}
+.slide .skill-share-inner .skill-share li::after {
+  content: attr(data-skill-name);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%) translateY(4px);
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(18, 20, 21, 0.95);
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  z-index: 5;
+}
+.slide .skill-share-inner .skill-share li:hover::after,
+.slide .skill-share-inner .skill-share li:focus-within::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 .slide .thumbnail {
   position: relative;

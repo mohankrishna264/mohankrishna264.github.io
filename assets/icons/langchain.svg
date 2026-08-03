@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#f8f3ff"/>
+  <path d="M20 22h24v8H20z" fill="#7C3AED"/>
+  <path d="M20 34h24v8H20z" fill="#A78BFA"/>
+  <path d="M28 18h8v28h-8z" fill="#4C1D95"/>
+  <text x="32" y="54" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#1f2937">LangChain</text>
+</svg>
